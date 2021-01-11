@@ -54,11 +54,8 @@ def main():
                     print( "Joystick ",joysticks[event.joy]," button",event.button,"down.")
                     if event.button == 0:
                         mouse.press(Button.left)
-                        # background.fill((255, 0, 0))
                     elif event.button == 1:
                         mouse.press(Button.right)
-                        # background.fill((0, 0, 255))
-
                     elif event.button == 4:
                         keyboard.press("e")
                     elif event.button == 5:
