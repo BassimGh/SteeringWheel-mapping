@@ -1,11 +1,11 @@
-This script maps steering wheel and pedal controls to mouse and keyboard controls.
+#### This script maps steering wheel and pedal controls to mouse and keyboard controls.
 
-## Why?
+### Why?
 
 * To play pc games that don't support steering wheel and footpedal control
 * cuz y not
 
-## How?
+### How?
 
 *Mouse movement*
 1. [Pygame](https://www.pygame.org/wiki/about) captures steering wheel movement
