@@ -11,8 +11,13 @@
 1. [Pygame](https://www.pygame.org/wiki/about) captures steering wheel movement
 2. This function takes the steering output that ranges from -1 to 1 and maps it to a desired mouse movement value based on a specified range (range depends on sensitivity preference)
 
-```
-
+```python
+def map(val, min1, max1, min2, max2):
+    range1 = max1 - min1
+    range2 = max2 - min2
+    
+    scale = range2 / range1
+    return (val - min1) * scale + min2
 ```
 
 3. [Pynput](https://pynput.readthedocs.io/en/latest/mouse.html) Moves mouse by value received from map function
